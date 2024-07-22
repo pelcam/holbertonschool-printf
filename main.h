@@ -3,8 +3,9 @@
 
 typedef struct caracter
 {
-	char;
-}
+	char *c;
+	int (*f)(char);
+} caracter_t;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
