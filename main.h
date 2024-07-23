@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*struct caracter - some structure*/
 typedef struct caracter
 {
 	char *c;
@@ -9,6 +10,6 @@ typedef struct caracter
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int _printstr(char *s); 
+int _printstr(char *s);
 
-#endif
+#endif /* MAIN_H */
