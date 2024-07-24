@@ -7,7 +7,7 @@
 /*struct caracter - some structure*/
 typedef struct caracter
 {
-	char *c;
+	char specifier;
 	int (*f)(char);
 } caracter_t;
 

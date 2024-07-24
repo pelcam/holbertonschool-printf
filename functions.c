@@ -15,5 +15,5 @@ int _putchar(char c)
 */
 int _printstr(char *s)
 {
-    return (write(1, s, sizeof(s) + 1))
+    return (write(1, s, sizeof(s) + 1));
 }
