@@ -3,8 +3,8 @@
 #include <stdarg.h>
 
 typedef struct spe {
-    char *chara;
-    void (*f)(va_list);
+    char chara;
+    void (*f)(va_list args);
 } specifiers;
 
 int _printf(const char *format, ...);

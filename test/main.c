@@ -3,7 +3,7 @@
 int main(void)
 {
     _printf("Bonjour !\n");
-    _printf("Holberton %d school\n", 45);
+    _printf("Holberton %c school\n", '&');
     _printf("Noix et %s\n", "noisettes");
     return(0);
 }
