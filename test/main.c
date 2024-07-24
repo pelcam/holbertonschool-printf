@@ -2,8 +2,6 @@
 
 int main(void)
 {
-    _printf("Bonjour !\n");
-    _printf("Holberton %c school\n", '&');
-    _printf("Noix et %s\n", "noisettes");
+    get_spe_func("bonjour %s", "Mari");
     return(0);
 }

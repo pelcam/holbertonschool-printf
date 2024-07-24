@@ -8,6 +8,7 @@ typedef struct spe {
 } specifiers;
 
 int _printf(const char *format, ...);
+char (*get_spe_func(const char *format, ...));
 void _putchar(va_list args);
 void _printstr(va_list args);
 #endif
