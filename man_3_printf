@@ -1,61 +1,48 @@
 NAME
-
-_printf - format and print data 
+	_printf - format and print data
 
 SYNOPSIS
-
-		_printf FORMAT [ARGUMENT] …
+	_printf FORMAT [ARGUMENT] …
 
 DESCRIPTION
-
 	Print argument(s) according to FORMAT.
-The “printf” utility prints its arguments under the control of a specified format. It is often used for producing formatted output, and it provides more control over the output compared to the “echo” command. “Printf” is capable of printing strings, integers, floating-point numbers, and other types of data in a structured manner.
+	The "printf" utility prints its arguments under the control of a specified format. It is often used for producing formatted output and provides more control over the output compared to the "echo" command. "printf" is capable of printing strings, integers, floating-point numbers, and other types of data in a structured manner.
 
-
-Format controls the output as in C printf.
+	Format controls the output as in C printf.
 
 FORMAT OF THE FORMAT STRING
-      
 The overall syntax of a conversion specification is:
 
-           %conversion
+       %conversion
 
 INTERPRETED SEQUENCES ARE:
 
-%%	a single %
+	%%    a single %
 
-%c	a character
+	%c    a character
 
-%s	a string
+	%s    a string
 
-%d	a decimal
+	%d    a decimal
 
-%i	an integer
+	%i    an integer
 
-The format string is a character string, beginning and ending in its initial shift state, if any.  The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications. Each conversion specification is introduced by the character %, and ends with a conversion specifier.
-FORMAT  is  re-used  as necessary to consume all the given ARGUMENTs.  If there are fewer ARGUMENTs than the format requires, extra format specifiers behave as if a  zero-value  or null string, as appropriate, had been supplied. 
- 
+	The format string is a character string, beginning and ending in its initial shift state, if any. The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications. Each conversion specification is introduced by the character %, and ends with a conversion specifier. FORMAT is re-used as necessary to consume all the given ARGUMENTs. If there are fewer ARGUMENTs than the format requires, extra format specifiers behave as if a zero-value or null string, as appropriate, had been supplied.
 
 EXAMPLES
-
 	To print a message:
-		_printf(“Holberton School.\n”)
+		_printf("Holberton School.\n");
 
 	To print an integer:
-		_printf(“We are in %d\n”, 2024)
+		_printf("We are in %d\n", 2024);
 
 	To print a date:
-		_printf(“Today it’s the 1st %s of %s !”, weekday, month)
+		_printf("Today it's the 1st %s of %s!", weekday, month);
+
 RETURN VALUE
+	Upon successful return, these functions return the number of bytes printed (excluding the null byte used to end output to strings). Thus, a return value of size or more means that the output was truncated.
 
-Upon successful return, these functions return the number of bytes printed (excluding the null byte used to end output to strings).
-Thus, a return value of size or more means that the output was truncated. 
-
-If an output error is encountered, a negative value is returned.
-
+	If an output error is encountered, a negative value is returned.
 
 AUTHOR
-
 	Written by Camille Peletier and Mariama Goudiaby.
-
-
