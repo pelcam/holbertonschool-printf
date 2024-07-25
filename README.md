@@ -19,8 +19,10 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 - `va_copy`
 - `va_arg`
 
-# examples of use
+## examples of use
+_printf("Hello %s\n", "world")
 
-# testing
+## testing
+using the main.c file
 
-# flowchart
+## flowchart
