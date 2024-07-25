@@ -34,10 +34,4 @@ To test the implementation, use the `main.c` file. Compile and run it as follows
 `./test_printf`
 
 ## flowchart
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+![Flowchart](https://drive.google.com/file/d/1eIr30Er6hQorZ1dm-rE_Mi_XIFn0yhS8/view)
