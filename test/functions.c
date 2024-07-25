@@ -1,11 +1,40 @@
+#include "main.h"
+#include <unistd.h>
+#include <stdarg.h>
+#include <stdlib.h>
 
-int _putchar(va_arg(args))
+void printchar(char c)
 {
-	return (write(1, va_arg(args, char c), 1));
+    write(1, &c, 1);
+}
+
+/**
+* _putchar - imitation putchar
+* @args: argument a afficher
+*/
+void _putchar(va_list args)
+{
+    char s = (char) va_arg(args, int); 
+    write(1, &s, 1); /* affiche chaque cara */
+
+}
+/**
+* _printstr - affiche une chaine de charactere
+* args: argument a afficher
+*/
+
+void _printstr(va_list args)
+{
+	char *s = (char *) va_arg(args, char *); 
+    while (*s) /* parcours chaque cara*/
+    {
+        write(1, s, 1); /* affiche chaque cara */
+        s++;
+    }
 }
 
 
-int _printstr(char *s)
+void _printnum(va_list args)
 {
-	return(write(1, s, sizeof(s) - 1));
+    _putchar(args);
 }
