@@ -6,6 +6,8 @@ void (*get_spe_func(char c))(va_list args)
     specifiers chars[] = {
         {'c', _putchar},
         {'s', _printstr},
+        {'i', _printnum},
+        {'d', _printnum},
         {'\0', NULL} /* Marqueur de fin */
     };
     int i = 0;

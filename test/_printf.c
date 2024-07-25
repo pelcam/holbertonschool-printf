@@ -20,8 +20,14 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%') /* check si format est un mod*/
 		{
-			get_spe_func(format[i + 1])(args);
-			i++;
+			if (args == NULL)
+			{
+				printchar('O');
+			}else
+			{
+				get_spe_func(format[i + 1])(args);
+				i++;
+			}
 		} else
 		{
 			printchar(format[i]);

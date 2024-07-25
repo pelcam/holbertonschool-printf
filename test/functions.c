@@ -1,6 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 void printchar(char c)
 {
@@ -33,12 +34,7 @@ void _printstr(va_list args)
 }
 
 
-void _printd(va_list args)
+void _printnum(va_list args)
 {
-	char *s = (char *) va_arg(args, char *); 
-    while (*s) /* parcours chaque cara*/
-    {
-        write(1, s, 1); /* affiche chaque cara */
-        s++;
-    }
+    _putchar(args);
 }
