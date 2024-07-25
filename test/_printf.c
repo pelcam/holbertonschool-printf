@@ -3,35 +3,31 @@
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
-void printchar(char c)
-{
-	write(1, &c, 1);
-}
+#include <stdlib.h>
 
 int _printf(const char *format, ...)
 {
+	va_list args;
+	int i = 0;
+	va_start(args, format);
 
-	if (format == NULL)
+	if (format == NULL) /* check si format est nul*/
 	{
-		return (NULL);
-		exit(100);
+		return (-1);
 	}
 	
-	for (i = 0; format[i] != '\0' ; i++) /** boucle sur format*/
+	for (i = 0; format[i] != '\0'; i++) /* parcours format*/
 	{
-		if (format[i] == '%' && format[i + 1] == modulo[i].chara) /* test si la valeur est un % et la valeur d'après un s*/
+		if (format[i] == '%') /* check si format est un mod*/
 		{
-			_printstr(args); /* affiche un argument*/
-			i++;
-		} else if (format[i] == '%' && format[i + 1] == 'c') /* test si la valeur est un % et la valeur d'après un c*/
-		{
-			_putchar(args); /* affiche un argument*/
+			get_spe_func(format[i + 1])(args);
 			i++;
 		} else
 		{
-			printchar(format[i]); /* affiche la valeur */
+			printchar(format[i]);
 		}
 	}
+
 	va_end(args);
 	return (0);
 }

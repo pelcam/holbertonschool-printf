@@ -1,23 +1,22 @@
 #include "main.h"
 #include <stddef.h>
 
-char (*get_spe_func(const char *format, ...))
+void (*get_spe_func(char c))(va_list args)
 {
-specifiers chars[] = {
-    {'c', _putchar},
-    {'s', _printstr},
-    {'\0', NULL} /* Marqueur de fin */
-};
-int i = 0, j = 0;
+    specifiers chars[] = {
+        {'c', _putchar},
+        {'s', _printstr},
+        {'\0', NULL} /* Marqueur de fin */
+    };
+    int i = 0;
 
-    for (j = 0; format[j] != '\0'; j++)
+    while (chars[i].chara != '\0') /* parcours la structure*/
     {
-        if (format[j] == '%')
+        if (chars[i].chara == c) /* check si l'arg suivant est c ou s */
         {
-            while (chars[i].chara != '\0' && chars[i].chara != format[j + 1])
-                i++;
+            return (chars[i].f);
         }
+        i++;
     }
-	return (chars[i].f);
-
+    return (NULL);
 }
