@@ -8,6 +8,7 @@ void (*get_spe_func(char c))(va_list args)
         {'s', _printstr},
         {'i', _printnum},
         {'d', _printnum},
+        {'%', _printmod},
         {'\0', NULL} /* Marqueur de fin */
     };
     int i = 0;
