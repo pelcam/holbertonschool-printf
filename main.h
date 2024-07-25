@@ -1,18 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 #include <stdarg.h>
-#include <unistd.h>
 
-/*struct caracter - some structure*/
-typedef struct caracter
-{
-	char *c;
-	int (*f)(char);
-} caracter_t;
+typedef struct spe {
+    char chara;
+    void (*f)(va_list args);
+} specifiers;
 
 int _printf(const char *format, ...);
-int _putchar(char c);
-int _printstr(char *s);
-
-#endif /* MAIN_H */
+void (*get_spe_func(char c))(va_list args);
+void _putchar(va_list args);
+void _printstr(va_list args);
+void printchar(char c);
+void _printnum(va_list args);
+#endif
