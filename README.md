@@ -1,10 +1,11 @@
 # _printf
 
 ## Description
-A custom implementation of the C library function `printf`. This project is part of the Holberton School curriculum.
+A custom implementation of the C library function `printf`. This project is part of the Holberton School curriculum. It aims to replicate the behavior of the standard printf function, providing insight into its internal workings.
 
 ## Compilation
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+To compile this project, use the following command:
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
 ## Requirements
 - All files are compiled on Ubuntu 22.04 LTS using gcc
@@ -20,9 +21,16 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 - `va_arg`
 
 ## examples of use
-_printf("Hello %s\n", "world")
+Here are some usage examples of `_printf`:
+`_printf("Hello, %s!\n", "world");
+_printf("Character: %c\n", 'H');`
+
+## features
+- Supports format specifiers: `%c`, `%s`
 
 ## testing
-using the main.c file
+To test the implementation, use the `main.c` file. Compile and run it as follows:
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c -o test_printf`
+`./test_printf`
 
 ## flowchart
