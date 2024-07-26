@@ -16,7 +16,7 @@ void _putchar(va_list args)
 {
     char s = (char) va_arg(args, int); 
     write(1, &s, 1); /* affiche chaque cara */
-
+    printchar('\0');
 }
 /**
 * _printstr - affiche une chaine de charactere
@@ -25,7 +25,11 @@ void _putchar(va_list args)
 
 void _printstr(va_list args)
 {
-	char *s = (char *) va_arg(args, char *); 
+	char *s = (char *) va_arg(args, char *);
+    if (s == (NULL))
+    {
+        return;
+    }
     while (*s) /* parcours chaque cara*/
     {
         write(1, s, 1); /* affiche chaque cara */
