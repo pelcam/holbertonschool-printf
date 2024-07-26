@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int i = 0;
+	int count = 0;
 
 	va_start(args, format);
 	if (format == NULL) /* check si format est nul*/
@@ -28,13 +29,16 @@ int _printf(const char *format, ...)
 		{
 			get_spe_func(format[i + 1])(args);
 			i++;
+			count++;
 		} else
 		{
 			printchar(format[i]);
+			count++;
 		}
 		format++;
+
 	}
 
 	va_end(args);
-	return (0);
+	return (count);
 }
