@@ -38,9 +38,32 @@ int _printstr(va_list args)
 }
 
 
-void _printnum(va_list args)
+int _printnum(va_list args)
 {
-    _putchar(args);
+	int n = va_arg(args, int);
+	int d, len;
+	unsigned int num;
+
+	d = 1;
+	len = 0;
+	num = n;
+	if (n < 0)
+	{
+		putchar('-');
+		len++;
+		num = -n;
+	}
+
+	while (num / d > 9)
+		d *= 10;
+	while (d != 0)
+	{
+		printchar('0' + num / d);
+		len++;
+		num %= d;
+		d /= 10;
+	}
+	return (len);
 }
 
 int _printmod(va_list args __attribute__((unused)))

@@ -24,21 +24,26 @@ int _printf(const char *format, ...)
 
 	while (*format)
 	{
-		if (*format == '%' && *(format + 1) != '\0')
+        if (*format == '%' && *(format + 1) != '\0')
 		{
-			int (*spe_func)(va_list) = get_spe_func(*(format + 1));
+            int (*spe_func)(va_list) = get_spe_func(*(format + 1));
 
-			if (spe_func != NULL)
+            if (spe_func != NULL)
 			{
-				count += spe_func(args);
-				format++;
-			} else
+                count += spe_func(args);
+                format++;
+            } else
 			{
-				printchar(*format);
-				count++;
-			}
-		}
-	}
+                printchar(*format);
+                count++;
+            }
+        } else
+		{
+            printchar(*format);
+            count++;
+        }
+        format++;
+    }
 	va_end(args);
 	return (count);
 }
