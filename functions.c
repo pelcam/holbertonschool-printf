@@ -29,17 +29,12 @@ int _printstr(va_list args)
 	char *s = (char *) va_arg(args, char *);
     int count = 0;
 
-    if (s == (NULL))
-    {
-        return (0);
-    }
     while (*s) /* parcours chaque cara*/
     {
-        write(1, s, 1); /* affiche chaque cara */
+        printchar(*s); /* affiche chaque cara */
         s++;
         count++;
     }
-    printchar('\0');
     return (count);
 }
 

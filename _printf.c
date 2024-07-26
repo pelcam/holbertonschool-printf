@@ -30,11 +30,10 @@ int _printf(const char *format, ...)
 			get_spe_func(format[i + 1])(args);
 			i++;
 			count++;
-		} else
-		{
-			printchar(format[i]);
-			count++;
 		}
+		printchar(format[i]);
+		count++;
+		format++;
 	}
 
 	va_end(args);
