@@ -1,0 +1,7 @@
+# Ignorer tous les fichiers exécutables
+*.exe
+*.bat
+*.sh
+*.out
+*.dll
+*.so
