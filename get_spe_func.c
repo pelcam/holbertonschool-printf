@@ -23,7 +23,7 @@ void (*get_spe_func(char c))(va_list args)
 
 	while (chars[i].chara != '\0') /* parcours la structure*/
 	{
-		if (chars[i].chara == c) /* check si l'arg suivant est c ou s */
+		if (chars[i].chara == c) /* check si l'arg est identique a c*/
 		{
 			return (chars[i].f);
 			}
