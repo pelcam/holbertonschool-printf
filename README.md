@@ -7,7 +7,7 @@ A custom implementation of the C library function `printf`. This project is part
 git clone https://{YOUR TOKEN}/pelcam/holbertonschool-printf.git
 
 ## Compilation
-To compile this project, use the following command:
+To compile this project, use the following command:  
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
 
 ## Requirements
