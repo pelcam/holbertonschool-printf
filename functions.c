@@ -28,6 +28,16 @@ int _printstr(va_list args)
 	char *s = (char *) va_arg(args, char *);
     int count = 0;
 
+    if (s == (NULL))
+    {
+        printchar('(');
+        printchar('n');
+        printchar('u');
+        printchar('l');
+        printchar('l');
+        printchar(')');
+        return (6);
+    }
     while (*s) /* parcours chaque cara*/
     {
         printchar(*s); /* affiche chaque cara */
