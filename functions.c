@@ -38,3 +38,8 @@ void _printnum(va_list args)
 {
     _putchar(args);
 }
+
+void _printmod(va_list args __attribute__((unused)))
+{
+    printchar('%');
+}

@@ -7,8 +7,8 @@ int main(void)
 {
     int len, len2;
 
-    /*char *str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in pretium nulla, ut lacinia felis. Aenean id erat sed magna varius pulvinar et ac magna. Praesent ultrices sed ex a tincidunt. Donec volutpat in ante at iaculis. Phasellus dapibus, diam eget lobortis tristique, elit nunc feugiat metus, a dapibus elit lorem vitae ante. Nulla commodo ut tortor eget molestie. Aliquam tempus vestibulum felis. Vestibulum condimentum volutpat fermentum. Nulla tortor lacus, lobortis quis viverra fusce.";
-    */
+    char *str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in pretium nulla, ut lacinia felis. Aenean id erat sed magna varius pulvinar et ac magna. Praesent ultrices sed ex a tincidunt. Donec volutpat in ante at iaculis. Phasellus dapibus, diam eget lobortis tristique, elit nunc feugiat metus, a dapibus elit lorem vitae ante. Nulla commodo ut tortor eget molestie. Aliquam tempus vestibulum felis. Vestibulum condimentum volutpat fermentum. Nulla tortor lacus, lobortis quis viverra fusce.";
+
     len = _printf("Let's print a simple sentence.\n");
     len2 = printf("Let's print a simple sentence.\n");
     printf("%d \t %d", len, len2);
@@ -46,8 +46,8 @@ int main(void)
     printf("\n");
     printf("----------------6------------");
     printf("\n");
-    len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
-    /*len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);*/
+    /*len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+    len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);*/
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------7------------");
@@ -61,7 +61,7 @@ int main(void)
     len = _printf("%%");
     printf("\t");
     len2 = printf("%%");
-    /*printf("%d \t %d", len, len2);
+    printf("%d \t %d", len, len2);
     printf("\n");
     printf("-----------------9-----------");
     printf("\n");
@@ -86,7 +86,7 @@ int main(void)
     printf("\n");
     len = _printf(str);
     printf("\t");
-    len2 = printf(str);
+    /*len2 = printf(str);*/
     printf("\n %d \t %d", len, len2);
     printf("\n");
     printf("----------------13-----------");
@@ -100,7 +100,7 @@ int main(void)
     printf("\n");
     len = _printf(NULL);
     printf("\t");
-    len2 = printf(NULL);
+    /*len2 = printf(NULL);*/
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------15-----------");
@@ -114,22 +114,21 @@ int main(void)
     printf("\n");
     len = _printf("%");
     printf("\t");
-    len2 = printf("%");
+    /*len2 = printf("%");*/
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------17-----------");
     printf("\n");
     len = _printf("%!\n");
     printf("\t");
-    len2 = printf("%!\n");
+    /*len2 = printf("%!\n");*/
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------18-----------");
     printf("\n");
     len = _printf("%K\n");
-    len2 = printf("%K\n");
+    /*len2 = printf("%K\n");*/
     printf("%d \t %d", len, len2);
     printf("\n");
-    */
     return (0);
 }

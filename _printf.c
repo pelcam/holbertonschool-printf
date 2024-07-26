@@ -15,19 +15,13 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	
+
 	for (i = 0; format[i] != '\0'; i++) /* parcours format*/
 	{
-		if (format[i] == '%') /* check si format est un mod*/
+		if (format[i] == '%' && format[i + 1] != '\0') /* check si format est un mod*/
 		{
-			if (args == NULL)
-			{
-				printchar('O');
-			}else
-			{
-				get_spe_func(format[i + 1])(args);
-				i++;
-			}
+			get_spe_func(format[i + 1])(args);
+			i++;
 		} else
 		{
 			printchar(format[i]);
