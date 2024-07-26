@@ -10,6 +10,10 @@ To compile this project, use the following command:
 ## Requirements
 - All files are compiled on Ubuntu 22.04 LTS using gcc
 - Code adheres to the Betty coding style
+- Follows the Betty style
+- No use of global variables
+- No more than 5 functions per file
+- Prototypes of the functions are in the main.h header file
 
 ## Authorized Functions
 - `write`
@@ -34,4 +38,4 @@ To test the implementation, use the `main.c` file. Compile and run it as follows
 `./test_printf`
 
 ## flowchart
-![Flowchart](https://drive.google.com/file/d/1eIr30Er6hQorZ1dm-rE_Mi_XIFn0yhS8/view)
+![Flowchart](https://imgur.com/a/u92pwLX)
