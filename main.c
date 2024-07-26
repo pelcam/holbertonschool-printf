@@ -42,14 +42,13 @@ int main(void)
     printf("\n");
     len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
     len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
-    len = _printf("Let's print a simple sentence.\n");
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------6------------");
-    /*printf("\n");
-    len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
-    len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
-    printf("%d \t %d", len, len2);*/
+    printf("\n");
+    /*len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+    len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);*/
+    printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------7------------");
     printf("\n");

@@ -16,7 +16,6 @@ int _putchar(va_list args)
 {
     char s = (char) va_arg(args, int);
     write(1, &s, 1); /* affiche chaque cara */
-    printchar('\0');
     return (1);
 }
 /**
