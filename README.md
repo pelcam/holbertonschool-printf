@@ -29,8 +29,8 @@ To compile this project, use the following command:
 
 ## examples of use
 Here are some usage examples of `_printf`:
-`_printf("Hello, %s!\n", "world");
-_printf("Character: %c\n", 'H');`
+`_printf("Hello, %s!\n", "world");`
+`_printf("Character: %c\n", 'H');`
 
 ## features
 - Supports format specifiers: `%c`, `%s`, `%i`, `%d`
