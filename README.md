@@ -33,7 +33,7 @@ Here are some usage examples of `_printf`:
 _printf("Character: %c\n", 'H');`
 
 ## features
-- Supports format specifiers: `%c`, `%s`
+- Supports format specifiers: `%c`, `%s`, `%i`, `%d`
 
 ## testing
 To test the implementation, use the `main.c` file. Compile and run it as follows:
