@@ -20,6 +20,7 @@ int _printf(const char *format, ...);
 int (*get_spe_func(char c))(va_list args);
 int _putchar(va_list args);
 int _printstr(va_list args);
+int _printnum(va_list args);
 void printchar(char c);
 int _printmod(va_list args);
 #endif

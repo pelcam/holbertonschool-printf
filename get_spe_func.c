@@ -14,6 +14,8 @@ int (*get_spe_func(char c))(va_list args)
 	specifiers chars[] = {
 		{'c', _putchar},
 		{'s', _printstr},
+		{'d', _printnum},
+		{'i', _printnum},
 		{'%', _printmod},
 		{'\0', NULL} /* Marqueur de fin */
 	};
