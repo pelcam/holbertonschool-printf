@@ -27,6 +27,9 @@ To compile this project, use the following command:
 - `va_copy`
 - `va_arg`
 
+## features
+Supports format specifiers: `%c`, `%s`, `%i`, `%d`
+
 ## examples of use
 Here are some usage examples of `_printf`:  
 `_printf("Hello, %s!\n", "world");`  
@@ -40,9 +43,6 @@ Character: H
 Here is an integer: 12  
 And here is: 12
 
-## features
-- Supports format specifiers: `%c`, `%s`, `%i`, `%d`
-
 ## testing
 To test the implementation, use the `main.c` file. Compile and run it as follows:  
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o test_printf`  
@@ -52,4 +52,4 @@ To test the implementation, use the `main.c` file. Compile and run it as follows
 ![Flowchart](./image/_printf.png)
 
 ## crew
-Mariama Goudiaby et Camille Pelletier
+This project was made by Mariama Goudiaby et Camille Pelletier during their first year at Holberton School
