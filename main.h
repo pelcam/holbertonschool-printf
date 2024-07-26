@@ -2,9 +2,16 @@
 #define MAIN_H
 #include <stdarg.h>
 
-typedef struct spe {
-    char chara;
-    void (*f)(va_list args);
+/**
+* struct spe - nom de notre structure
+* @chara: specifiers
+* @f: fonction correspondante qui print selon un type
+* Description : structure qui associe une fonction a un charactere
+*/
+typedef struct spe
+{
+char chara;
+void (*f)(va_list args);
 } specifiers;
 
 int _printf(const char *format, ...);
