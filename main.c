@@ -113,11 +113,12 @@ int main(void)
     /*len2 = printf("%");*/
     printf("%d \t %d", len, len2);
     printf("\n");
+    _printf("%d", -1024);
     printf("----------------17-----------");
     printf("\n");
-    len = _printf("%!\n");
+    /*len = _printf("%!\n");
     printf("\t");
-    /*len2 = printf("%!\n");*/
+    len2 = printf("%!\n");*/
     printf("%d \t %d", len, len2);
     printf("\n");
     printf("----------------18-----------");
