@@ -30,7 +30,15 @@ To compile this project, use the following command:
 ## examples of use
 Here are some usage examples of `_printf`:  
 `_printf("Hello, %s!\n", "world");`  
-`_printf("Character: %c\n", 'H');`
+`_printf("Character: %c\n", 'H');`  
+`_printf("Here is an integer: %i\n", 12)`  
+`_printf("ANd here is: %d\n", 12)`  
+  
+And here is the corresponding output :  
+Hello, world  
+Character: H  
+Here is an integer: 12  
+And here is: 12
 
 ## features
 - Supports format specifiers: `%c`, `%s`, `%i`, `%d`
