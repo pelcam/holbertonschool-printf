@@ -31,6 +31,7 @@ void _printstr(va_list args)
         write(1, s, 1); /* affiche chaque cara */
         s++;
     }
+    printchar('\0');
 }
 
 
