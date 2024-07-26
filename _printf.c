@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0') /* check si format est un %*/
 		{
-			count += get_spe_func(format[i + 1])(args) - 1;
+			count += get_spe_func(format[i + 1])(args);
 			i++;
 			format++;
 		} else
