@@ -38,4 +38,4 @@ To test the implementation, use the `main.c` file. Compile and run it as follows
 `./test_printf`
 
 ## flowchart
-![Flowchart](https://imgur.com/a/u92pwLX)
+![Flowchart](./images/_printf flowchart.drawio.png)
