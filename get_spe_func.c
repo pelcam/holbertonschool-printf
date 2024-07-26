@@ -24,7 +24,7 @@ int (*get_spe_func(char c))(va_list args)
 		if (chars[i].chara == c) /* check si l'arg est identique a c*/
 		{
 			return (chars[i].f);
-			}
+		}
 		i++;
 	}
 	return (0);

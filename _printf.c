@@ -14,7 +14,6 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i = 0;
 	int count = 0;
 
 	va_start(args, format);
@@ -23,21 +22,23 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 
-	while (*format) /* parcours format*/
+	while (*format)
 	{
-		if (format[i] == '%' && format[i + 1] != '\0') /* check si format est un %*/
+		if (*format == '%' && *(format + 1) != '\0')
 		{
-			count += get_spe_func(format[i + 1])(args);
-			i++;
-			format++;
-		} else
-		{
-			printchar(format[i]);
-			count++;
-			format++;
+			int (*spe_func)(va_list) = get_spe_func(*(format + 1));
+
+			if (spe_func != NULL)
+			{
+				count += spe_func(args);
+				format++;
+			} else
+			{
+				printchar(*format);
+				count++;
+			}
 		}
 	}
-
 	va_end(args);
 	return (count);
 }
