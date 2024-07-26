@@ -3,6 +3,9 @@
 ## Description
 A custom implementation of the C library function `printf`. This project is part of the Holberton School curriculum. It aims to replicate the behavior of the standard printf function, providing insight into its internal workings.
 
+## installation
+
+
 ## Compilation
 To compile this project, use the following command:
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
@@ -34,8 +37,11 @@ _printf("Character: %c\n", 'H');`
 
 ## testing
 To test the implementation, use the `main.c` file. Compile and run it as follows:
-`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c -o test_printf`
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o test_printf`
 `./test_printf`
 
 ## flowchart
 ![Flowchart](./image/_printf.png)
+
+## crew
+Mariama Goudiaby et Camille Pelletier
