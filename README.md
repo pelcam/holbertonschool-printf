@@ -4,7 +4,7 @@
 A custom implementation of the C library function `printf`. This project is part of the Holberton School curriculum. It aims to replicate the behavior of the standard printf function, providing insight into its internal workings.
 
 ## installation
-
+git clone https://{YOUR TOKEN}/pelcam/holbertonschool-printf.git
 
 ## Compilation
 To compile this project, use the following command:
