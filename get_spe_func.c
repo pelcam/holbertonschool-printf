@@ -9,13 +9,11 @@
 *
 * Return: soit la fonction correspondante soit void
 */
-void (*get_spe_func(char c))(va_list args)
+int (*get_spe_func(char c))(va_list args)
 {
 	specifiers chars[] = {
 		{'c', _putchar},
 		{'s', _printstr},
-		{'i', _printnum},
-		{'d', _printnum},
 		{'%', _printmod},
 		{'\0', NULL} /* Marqueur de fin */
 	};
@@ -29,5 +27,5 @@ void (*get_spe_func(char c))(va_list args)
 			}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
