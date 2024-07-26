@@ -28,16 +28,16 @@ To compile this project, use the following command:
 - `va_arg`
 
 ## examples of use
-Here are some usage examples of `_printf`:
-`_printf("Hello, %s!\n", "world");`
+Here are some usage examples of `_printf`:  
+`_printf("Hello, %s!\n", "world");`  
 `_printf("Character: %c\n", 'H');`
 
 ## features
 - Supports format specifiers: `%c`, `%s`, `%i`, `%d`
 
 ## testing
-To test the implementation, use the `main.c` file. Compile and run it as follows:
-`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o test_printf`
+To test the implementation, use the `main.c` file. Compile and run it as follows:  
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o test_printf`  
 `./test_printf`
 
 ## flowchart
